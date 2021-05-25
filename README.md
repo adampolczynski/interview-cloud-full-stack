@@ -18,7 +18,7 @@ The table has the following columns:
 
 Our existing firmware versions can be found in the database. Devices that are on the latest version will have a green checkmark in this column.
 
-Devices with an in-progress update to the latest firmware will display a loading icon. Updates are in-progress if no “finished” value is present in the database.
+Devices with an in-progress update will display a loading icon. Updates are in-progress if no “finished” value is present in the database.
 
 For other devices, this column can be blank.
 
