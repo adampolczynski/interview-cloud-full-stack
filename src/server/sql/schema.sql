@@ -30,7 +30,7 @@ CREATE TABLE devices
   "id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
   "name" VARCHAR,
   "user_email" VARCHAR,
-  "version_id" INTEGER
+  "firmware_version_id" INTEGER
 );
 
 DROP TABLE IF EXISTS updates;

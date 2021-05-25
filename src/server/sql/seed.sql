@@ -74,7 +74,7 @@ INSERT INTO devices
 (
   "name",
   "user_email",
-  "version_id"
+  "firmware_version_id"
 )
 VALUES
 (
