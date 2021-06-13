@@ -28,7 +28,7 @@ const UnauthorizedUserIcon = () => {
 
 const columns = [
   {
-    id: 'updated',
+    id: 'status',
     render: (row) => row.iconExample && <UpdateInProgressIcon />,
     collapsing: true
   },
