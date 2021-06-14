@@ -42,7 +42,7 @@ When sorted, 9.1.1 should come before 10.1.1.
 
 This column’s value is based on the most recent “finished” time for a completed update.
 
-For updates completed within the past day, this can be formatted as “X Hour(s) Ago”. Otherwise just display the date, i.e. ”YYYY/MM/DD”.
+For updates completed today, this should just display "Today". Otherwise display the date, i.e. ”YYYY/MM/DD”.
 
 **Note: This table should not include devices of users whose subscription end dates have passed.**
 
