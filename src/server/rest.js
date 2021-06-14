@@ -1,11 +1,15 @@
 import express from "express";
 
+const port = 4000;
+
 export const serveRest = (data) => {
   const app = express();
 
-  app.get("/devices", (_, res) => res.send(data));
+  app.get("/devices", async (_, res) => res.send(
+    await connection.raw("select name from devices")
+  ));
 
-  app.listen(4000, () =>
-    console.log("REST Server ready at http://localhost:4000")
+  app.listen(port, () =>
+    console.log(`REST Server ready at http://localhost:${port}`)
   );
 };

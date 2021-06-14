@@ -22,7 +22,7 @@ Devices with an in-progress update will display a loading icon. Updates are in-p
 
 For other devices, this column can be blank.
 
-When sorted in ascending order, checkmarks should come first, followed by loading icons, then empty rows.
+When sorted, checkmarks should come first, followed by loading icons, then empty rows.
 
 #### User
 
@@ -34,7 +34,7 @@ If the device’s user cannot perform updates, this column will also include a w
 
 This column displays the device’s current version, formatted like “1.2.3”.
 
-When sorted, 10.1.1 should be higher than 9.1.1.
+When sorted, 9.1.1 should come before 10.1.1.
 
 (See https://semver.org/ for more explanation of this convention.)
 
@@ -42,8 +42,8 @@ When sorted, 10.1.1 should be higher than 9.1.1.
 
 This column’s value is based on the most recent “finished” time for a completed update.
 
-For updates completed within the past day, this can be formatted as “X Hour(s) Ago”. Otherwise just display the date, i.e. ”YYYY/MM/DD”.
+For updates completed today, this should just display "Today". Otherwise display the date, i.e. ”YYYY/MM/DD”.
 
 **Note: This table should not include devices of users whose subscription end dates have passed.**
 
-*(For clarification regarding these instructions, contact [jbowler-mersive](https://github.com/jbowler-mersive).)*
+_(For clarification regarding these instructions, contact [jbowler-mersive](https://github.com/jbowler-mersive).)_

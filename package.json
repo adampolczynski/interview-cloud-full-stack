@@ -3,21 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "apollo-server-express": "^2.24.1",
     "express": "^4.17.1",
     "graphql": "^15.5.0",
     "knex": "^0.95.6",
     "node": "^16.1.0",
+    "nodemon": "^2.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
-    "sqlite3": "^5.0.2",
-    "web-vitals": "^1.0.1"
+    "sqlite3": "^5.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "cat src/server/sql/schema.sql src/server/sql/seed.sql src/server/sql/custom.sql | sqlite3 database.db",
-    "serve": "npm run prepare && node src/server"
+    "serve": "npm run prepare && nodemon src/server"
   },
   "eslintConfig": {
     "extends": [

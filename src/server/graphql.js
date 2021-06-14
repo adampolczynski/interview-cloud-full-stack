@@ -1,7 +1,8 @@
 import express from "express";
-import apollo from "apollo-server-express";
+import { ApolloServer, gql } from "apollo-server-express";
+import { connection } from "./connection.js";
 
-const { ApolloServer, gql } = apollo;
+const port = 4000;
 
 const typeDefs = gql`
   type Device {
@@ -13,10 +14,10 @@ const typeDefs = gql`
   }
 `;
 
-export async function serveGraphQl(data) {
+export async function serveGraphQl() {
   const resolvers = {
     Query: {
-      devices: () => data,
+      devices: () => connection.raw("select name from devices"),
     },
   };
 
@@ -25,9 +26,9 @@ export async function serveGraphQl(data) {
 
   const app = express();
   server.applyMiddleware({ app });
-  app.listen({ port: 4000 });
+  app.listen({ port });
 
   console.log(
-    `GraphQL server ready at http://localhost:4000${server.graphqlPath}`
+    `GraphQL server ready at http://localhost:${port}${server.graphqlPath}`
   );
 }

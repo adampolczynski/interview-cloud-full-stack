@@ -28,7 +28,7 @@ const UnauthorizedUserIcon = () => {
 
 const columns = [
   {
-    id: 'updated',
+    id: 'status',
     render: (row) => row.iconExample && <UpdateInProgressIcon />,
     collapsing: true
   },
@@ -64,10 +64,7 @@ function App() {
   return (
     <DataTable
       data={data}
-      sortBy={{
-        columnId: 'user',
-        ascending: true,
-      }}
+      sortBy="user"
       columns={columns}
       sort={(columnId) => console.log({ columnId })}
       header={<Header>Devices to Update</Header>}
