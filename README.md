@@ -12,7 +12,7 @@ To view the client in a browser, run `npm run start` from the root. This client 
 
 Feel free to make any changes to the existing code and include new modules as needed.
 
-_(Hint: When implementing pagination and sorting, try to create a scalable solution that would work for a large number of devices.)_
+_(Hint: For scalability, pagination and sorting can be handled in the back-end!)_
 
 The table has the following columns:
 
