@@ -10,7 +10,9 @@ This server has access to a sqlite3 database with all the necessary data, seeded
 
 To view the client in a browser, run `npm run start` from the root. This client should consume data from the local server.
 
-Feel free to make any changes to the existing code and include new modules as needed, but keep best practices and future scalability in mind.
+Feel free to make any changes to the existing code and include new modules as needed.
+
+_(Hint: When implementing pagination and sorting, try to create a scalable solution that would work for a large number of devices.)_
 
 The table has the following columns:
 
@@ -28,7 +30,7 @@ When sorted, checkmarks should come first, followed by loading icons, then empty
 
 This column displays the email address of the device’s user.
 
-If the device’s user cannot perform updates, this column will also include a warning icon. Users can perform updates if they have an “update” permission or if they are an admin.
+If the device’s user cannot perform updates, this column will also include a warning icon. Users can perform updates only if they are an admin.
 
 #### Firmware
 
