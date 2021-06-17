@@ -1,17 +1,5 @@
 -- DO NOT MODIFY THIS FILE
 
-INSERT INTO user_permissions
-  ("user_email", "permission")
-VALUES
-  ('tbarnes@greendale.edu', 'delete'),
-  ('tbarnes@greendale.edu', 'update'),
-  ('bperry@greendale.edu', 'update'),
-  ('aedison@greendale.edu', 'delete'),
-  ('sbennett@greendale.edu', 'update'),
-  ('sbennett@greendale.edu', 'delete'),
-  ('jwinger@greendale.edu', 'delete')
-;
-
 INSERT INTO users
 (
   "email",

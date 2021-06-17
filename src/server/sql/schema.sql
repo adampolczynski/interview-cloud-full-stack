@@ -1,12 +1,5 @@
 -- DO NOT MODIFY THIS FILE
 
-DROP TABLE IF EXISTS user_permissions;
-CREATE TABLE user_permissions
-(
-  "user_email" VARCHAR,
-  "permission" VARCHAR
-);
-
 DROP TABLE IF EXISTS users;
 CREATE TABLE users
 (
