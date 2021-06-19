@@ -47,5 +47,3 @@ This column’s value is based on the most recent “finished” time for a comp
 For updates completed today, this should just display "Today". Otherwise display the date, i.e. ”YYYY/MM/DD”.
 
 **Note: This table should not include devices of users whose subscription end dates have passed.**
-
-_(For clarification regarding these instructions, contact [jbowler-mersive](https://github.com/jbowler-mersive).)_
