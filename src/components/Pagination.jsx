@@ -44,7 +44,10 @@ export const Pagination = (props) => (
       {props.sizes.map((size) => (
         <Menu.Item
           key={size}
-          onClick={() => props.setSize(size)}
+          onClick={() => {
+            props.setSize(size);
+            props.setCurrent(1);
+          }}
           header={size === props.size}
           name={`${size}`}
         />
