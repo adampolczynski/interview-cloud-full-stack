@@ -5,6 +5,5 @@ export const connection = knex({
   connection: {
     filename: 'database.db',
   },
-  multipleStatements: true,
   useNullAsDefault: true,
 });
