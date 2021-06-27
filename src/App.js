@@ -13,7 +13,7 @@ const data = [
 
 const UpToDateIcon = () => {
   const icon = <Icon name="checkmark" color="green" />;
-  return <Popup content="Up to Date" trigger={icon} />;
+  return <Popup content="Up To Date" trigger={icon} />;
 }
 
 const UpdateInProgressIcon = () => {
