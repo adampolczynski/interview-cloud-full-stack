@@ -46,4 +46,6 @@ This column’s value is based on the most recent “finished” time for a comp
 
 For updates completed today, this should just display "Today". Otherwise display the date, i.e. ”YYYY/MM/DD”.
 
+When sorted, most recent should be first.
+
 **Note: This table should not include devices of users whose subscription end dates have passed.**
