@@ -56,7 +56,7 @@ const columns = [
   {
     id: 'updated',
     header: 'Last Updated',
-    render: (row) => '1 Hour Ago',
+    render: (row) => '2021/06/27',
   },
 ]
 
