@@ -6,7 +6,7 @@ To accomplish this, we’ve created a sortable table component. We’d like to p
 
 To start the server, run `npm run serve` from the project root. Currently, this serves a basic GraphQL endpoint with the device names. You may use the included RESTful example instead, or another strategy if you prefer.
 
-This server has access to a sqlite3 database with all the necessary data, seeded by the queries in the `sql` folder. Create additional functions or views as needed, but do not modify the existing schema or data.
+This server has access to a [sqlite3](https://www.sqlite.org/download.html) database with all the necessary data, seeded by the queries in the `sql` folder. Create additional functions or views as needed, but do not modify the existing schema or data.
 
 To view the client in a browser, run `npm run start` from the root. This client should consume data from the local server.
 
