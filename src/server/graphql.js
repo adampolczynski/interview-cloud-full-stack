@@ -1,18 +1,9 @@
 import express from "express";
 import { ApolloServer, gql } from "apollo-server-express";
 import { connection } from "./connection.js";
+import { typeDefs } from './schema.js';
 
 const port = 4000;
-
-const typeDefs = gql`
-  type Device {
-    name: String!
-  }
-
-  type Query {
-    devices: [Device!]!
-  }
-`;
 
 export async function serveGraphQl() {
   const resolvers = {

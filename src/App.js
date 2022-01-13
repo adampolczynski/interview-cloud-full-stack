@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import {
   Header,
   Icon,
@@ -6,6 +7,7 @@ import {
 } from 'semantic-ui-react'
 import { DataTable } from './components/DataTable'
 import { Pagination } from './components/Pagination'
+import { gql, useQuery } from '@apollo/client';
 
 const data = [
   { iconExample: true }, {}, {}, {}, {}, {}, {}, {}, {}, {},
@@ -13,8 +15,8 @@ const data = [
 
 const UpToDateIcon = () => {
   const icon = <Icon name="checkmark" color="green" />;
-  return <Popup content="Up To Date" trigger={icon} />;
-}
+  return <Popup content="Up to Date" trigger={icon} />;
+};
 
 const UpdateInProgressIcon = () => {
   const icon = <Loader active inline size="tiny" />;
