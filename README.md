@@ -18,7 +18,9 @@ Feel free to make any changes to the existing code and include new modules as ne
 
 ## Assignment & Instructions
 
-Take the existing code, and modify as necessary to load the data from the database, and meet the criteria for each column described below:
+Take the existing code, and modify as necessary to load the data from the database, and meet the criteria for each column described below.
+
+The table should paginate
 
 **Note: The table should not include devices of users whose subscription end dates have passed.**
 
@@ -26,6 +28,7 @@ Take the existing code, and modify as necessary to load the data from the databa
 
 This column displays the name of the device in the database.
 
+This column should be sortable. Sorting on other columns will be considered bonus
 #### User
 
 This column displays the email address of the device’s user.
