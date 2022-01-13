@@ -6,6 +6,7 @@ import {
 } from 'semantic-ui-react'
 import { DataTable } from './components/DataTable'
 import { Pagination } from './components/Pagination'
+import { gql, useQuery } from '@apollo/client';
 
 const data = [
   { iconExample: true }, {}, {}, {}, {}, {}, {}, {}, {}, {},
