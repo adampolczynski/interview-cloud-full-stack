@@ -4,6 +4,10 @@ You’ve been tasked with creating a feature to help clients manage firmware upd
 
 To accomplish this, we’ve created a table component. We’d like to populate this table with device and update data from the database.
 
+## Solution
+
+![Mersive-assignment-table](https://github.com/adampolczynski/interview-cloud-full-stack/assets/25153606/040c508b-0ebe-4b94-af64-6fbaf716e888)
+
 ## Server
 
 To start the server, run `npm run serve` from the project root. Currently, this serves a basic GraphQL endpoint with the device names. You may use the included RESTful example instead, or another strategy if you prefer.
