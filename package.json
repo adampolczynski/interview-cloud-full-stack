@@ -5,9 +5,11 @@
   "dependencies": {
     "@apollo/client": "^3.3.20",
     "apollo-server-express": "^2.24.1",
+    "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "graphql": "^15.5.0",
     "knex": "^0.95.6",
+    "moment": "^2.29.4",
     "node": "^16.1.0",
     "nodemon": "^2.0.7",
     "react": "^17.0.2",
@@ -15,15 +17,15 @@
     "react-scripts": "4.0.3",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "cat src/server/sql/schema.sql src/server/sql/seed.sql src/server/sql/custom.sql | sqlite3 database.db",
-    "serve": "npm run prepare && nodemon src/server"
+    "prepare": "cat server/sql/schema.sql server/sql/seed.sql server/sql/custom.sql | sqlite3 database.db",
+    "serve": "npm run prepare && nodemon server"
   },
   "eslintConfig": {
     "extends": [
